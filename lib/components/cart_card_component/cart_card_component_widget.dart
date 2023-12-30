@@ -145,7 +145,7 @@ class _CartCardComponentWidgetState extends State<CartCardComponentWidget> {
                               style: FlutterFlowTheme.of(context)
                                   .titleLarge
                                   .override(
-                                    fontFamily: 'Outfit',
+                                    fontFamily: 'Lato',
                                     color: FlutterFlowTheme.of(context)
                                         .secondaryText,
                                     fontSize: 14.0,

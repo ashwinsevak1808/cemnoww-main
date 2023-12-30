@@ -15,8 +15,6 @@ class ProductDetailScreenModel
           pageViewController!.page != null
       ? pageViewController!.page!.round()
       : 0;
-  // State field(s) for CountController widget.
-  int? countControllerValue;
 
   /// Initialization and disposal methods.
 

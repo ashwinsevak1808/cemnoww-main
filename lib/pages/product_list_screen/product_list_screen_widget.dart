@@ -189,32 +189,56 @@ class _ProductListScreenWidgetState extends State<ProductListScreenWidget> {
                       wrapWithModel(
                         model: _model.productCardComponentModel1,
                         updateCallback: () => setState(() {}),
-                        child: const ProductCardComponentWidget(),
+                        child: ProductCardComponentWidget(
+                          action: () async {},
+                          onIncrease: () async {},
+                          onDecrease: () async {},
+                        ),
                       ),
                       wrapWithModel(
                         model: _model.productCardComponentModel2,
                         updateCallback: () => setState(() {}),
-                        child: const ProductCardComponentWidget(),
+                        child: ProductCardComponentWidget(
+                          action: () async {},
+                          onIncrease: () async {},
+                          onDecrease: () async {},
+                        ),
                       ),
                       wrapWithModel(
                         model: _model.productCardComponentModel3,
                         updateCallback: () => setState(() {}),
-                        child: const ProductCardComponentWidget(),
+                        child: ProductCardComponentWidget(
+                          action: () async {},
+                          onIncrease: () async {},
+                          onDecrease: () async {},
+                        ),
                       ),
                       wrapWithModel(
                         model: _model.productCardComponentModel4,
                         updateCallback: () => setState(() {}),
-                        child: const ProductCardComponentWidget(),
+                        child: ProductCardComponentWidget(
+                          action: () async {},
+                          onIncrease: () async {},
+                          onDecrease: () async {},
+                        ),
                       ),
                       wrapWithModel(
                         model: _model.productCardComponentModel5,
                         updateCallback: () => setState(() {}),
-                        child: const ProductCardComponentWidget(),
+                        child: ProductCardComponentWidget(
+                          action: () async {},
+                          onIncrease: () async {},
+                          onDecrease: () async {},
+                        ),
                       ),
                       wrapWithModel(
                         model: _model.productCardComponentModel6,
                         updateCallback: () => setState(() {}),
-                        child: const ProductCardComponentWidget(),
+                        child: ProductCardComponentWidget(
+                          action: () async {},
+                          onIncrease: () async {},
+                          onDecrease: () async {},
+                        ),
                       ),
                     ],
                   ),

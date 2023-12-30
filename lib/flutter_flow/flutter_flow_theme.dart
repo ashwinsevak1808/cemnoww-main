@@ -103,11 +103,11 @@ class LightModeTheme extends FlutterFlowTheme {
   @Deprecated('Use tertiary instead')
   Color get tertiaryColor => tertiary;
 
-  late Color primary = const Color(0xFF4B39EF);
+  late Color primary = const Color(0xFFF9CF58);
   late Color secondary = const Color(0xFF39D2C0);
   late Color tertiary = const Color(0xFFEE8B60);
   late Color alternate = const Color(0xFFE0E3E7);
-  late Color primaryText = const Color(0xFF14181B);
+  late Color primaryText = const Color(0xFF1C2225);
   late Color secondaryText = const Color(0xFF57636C);
   late Color primaryBackground = const Color(0xFFF1F4F8);
   late Color secondaryBackground = const Color(0xFFFFFFFF);
@@ -117,7 +117,7 @@ class LightModeTheme extends FlutterFlowTheme {
   late Color accent4 = const Color(0xCCFFFFFF);
   late Color success = const Color(0xFF249689);
   late Color warning = const Color(0xFFF9CF58);
-  late Color error = const Color(0xFFFF5963);
+  late Color error = const Color(0xFFD12D2D);
   late Color info = const Color(0xFFFFFFFF);
 }
 
@@ -159,51 +159,51 @@ class ThemeTypography extends Typography {
 
   final FlutterFlowTheme theme;
 
-  String get displayLargeFamily => 'Outfit';
+  String get displayLargeFamily => 'Lato';
   TextStyle get displayLarge => GoogleFonts.getFont(
-        'Outfit',
+        'Lato',
         color: theme.primaryText,
         fontWeight: FontWeight.normal,
         fontSize: 64.0,
       );
-  String get displayMediumFamily => 'Outfit';
+  String get displayMediumFamily => 'Lato';
   TextStyle get displayMedium => GoogleFonts.getFont(
-        'Outfit',
+        'Lato',
         color: theme.primaryText,
         fontWeight: FontWeight.normal,
         fontSize: 44.0,
       );
-  String get displaySmallFamily => 'Outfit';
+  String get displaySmallFamily => 'Lato';
   TextStyle get displaySmall => GoogleFonts.getFont(
-        'Outfit',
+        'Lato',
         color: theme.primaryText,
         fontWeight: FontWeight.w600,
         fontSize: 36.0,
       );
-  String get headlineLargeFamily => 'Outfit';
+  String get headlineLargeFamily => 'Lato';
   TextStyle get headlineLarge => GoogleFonts.getFont(
-        'Outfit',
+        'Lato',
         color: theme.primaryText,
         fontWeight: FontWeight.w600,
         fontSize: 32.0,
       );
-  String get headlineMediumFamily => 'Outfit';
+  String get headlineMediumFamily => 'Lato';
   TextStyle get headlineMedium => GoogleFonts.getFont(
-        'Outfit',
+        'Lato',
         color: theme.primaryText,
         fontWeight: FontWeight.normal,
         fontSize: 24.0,
       );
-  String get headlineSmallFamily => 'Outfit';
+  String get headlineSmallFamily => 'Lato';
   TextStyle get headlineSmall => GoogleFonts.getFont(
-        'Outfit',
+        'Lato',
         color: theme.primaryText,
         fontWeight: FontWeight.w500,
         fontSize: 24.0,
       );
-  String get titleLargeFamily => 'Outfit';
+  String get titleLargeFamily => 'Lato';
   TextStyle get titleLarge => GoogleFonts.getFont(
-        'Outfit',
+        'Lato',
         color: theme.primaryText,
         fontWeight: FontWeight.w500,
         fontSize: 22.0,

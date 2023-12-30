@@ -7,6 +7,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:provider/provider.dart';
+import 'package:webviewx_plus/webviewx_plus.dart';
 import 'cart_screen_model.dart';
 export 'cart_screen_model.dart';
 
@@ -112,7 +113,8 @@ class _CartScreenWidgetState extends State<CartScreenWidget> {
                     useSafeArea: true,
                     context: context,
                     builder: (context) {
-                      return GestureDetector(
+                      return WebViewAware(
+                          child: GestureDetector(
                         onTap: () => _model.unfocusNode.canRequestFocus
                             ? FocusScope.of(context)
                                 .requestFocus(_model.unfocusNode)
@@ -121,7 +123,7 @@ class _CartScreenWidgetState extends State<CartScreenWidget> {
                           padding: MediaQuery.viewInsetsOf(context),
                           child: const DeleteSheetComponentWidget(),
                         ),
-                      );
+                      ));
                     },
                   ).then((value) => safeSetState(() {}));
                 },

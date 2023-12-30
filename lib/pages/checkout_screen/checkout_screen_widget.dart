@@ -127,7 +127,7 @@ class _CheckoutScreenWidgetState extends State<CheckoutScreenWidget> {
                                 style: FlutterFlowTheme.of(context)
                                     .displaySmall
                                     .override(
-                                      fontFamily: 'Outfit',
+                                      fontFamily: 'Lato',
                                       color: Colors.black,
                                       fontSize: 16.0,
                                     ),

@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+
 import '/index.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 
@@ -64,9 +65,9 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => const HomeScreenWidget(),
         ),
         FFRoute(
-          name: 'zip_code_success_screen',
-          path: '/zipCodeSuccessScreen',
-          builder: (context, params) => const ZipCodeSuccessScreenWidget(),
+          name: 'no_internet_screen',
+          path: '/noInternetScreen',
+          builder: (context, params) => const NoInternetScreenWidget(),
         ),
         FFRoute(
           name: 'category_screen',
@@ -101,7 +102,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
         FFRoute(
           name: 'product_detail_screen',
           path: '/productDetailScreen',
-          builder: (context, params) => const ProductDetailScreenWidget(),
+          builder: (context, params) => ProductDetailScreenWidget(
+            productName: params.getParam('productName', ParamType.String),
+            productAmount: params.getParam('productAmount', ParamType.String),
+            htmlContent: params.getParam('htmlContent', ParamType.String),
+          ),
         ),
         FFRoute(
           name: 'profile_screen',
@@ -114,11 +119,6 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => const UpdateProfileWidget(),
         ),
         FFRoute(
-          name: 'register_screen',
-          path: '/registerScreen',
-          builder: (context, params) => const RegisterScreenWidget(),
-        ),
-        FFRoute(
           name: 'address_screen',
           path: '/addressScreen',
           builder: (context, params) => const AddressScreenWidget(),
@@ -127,6 +127,26 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'add_address',
           path: '/addAddress',
           builder: (context, params) => const AddAddressWidget(),
+        ),
+        FFRoute(
+          name: 'terms_and_conditions_screen',
+          path: '/termsAndConditionsScreen',
+          builder: (context, params) => const TermsAndConditionsScreenWidget(),
+        ),
+        FFRoute(
+          name: 'dummy_page',
+          path: '/dummyPage',
+          builder: (context, params) => const DummyPageWidget(),
+        ),
+        FFRoute(
+          name: 'update_profile_main',
+          path: '/updateProfileMain',
+          builder: (context, params) => const UpdateProfileMainWidget(),
+        ),
+        FFRoute(
+          name: 'home_screen_varient_2',
+          path: '/homeScreenVarient2',
+          builder: (context, params) => const HomeScreenVarient2Widget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
